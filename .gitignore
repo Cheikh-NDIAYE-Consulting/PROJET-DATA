@@ -1,0 +1,64 @@
+# =========================
+# Python / environnement
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Variables locales / secrets
+# =========================
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+*keyfile*.json
+*service-account*.json
+*gcp*.json
+*azure*.json
+*aws*.json
+
+# =========================
+# Spark / Hadoop local
+# =========================
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+.checkpoint/
+
+# =========================
+# Données générées par le pipeline
+# On garde data/raw/ car ce sont des données sources synthétiques utiles au CV.
+# =========================
+data/lake/
+data/reports/
+data/streaming/checkpoints/
+data/streaming/output/
+
+# Gros fichiers temporaires éventuels
+*.snappy.parquet
+*.tmp
+*.log
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
